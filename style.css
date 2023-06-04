@@ -27,8 +27,30 @@ body, html {
     background-image: url("./images/blackbg.png");
     background-size: cover; 
   }
-  
-  
+  /* Slide in text */
+  .slide-in-text {
+    color: blue;
+    font-size: 3em;
+    animation: slide-in 2s forwards;
+    opacity: 0;
+}
+
+.slide-in-image {
+    animation: slide-in 2s forwards;
+    opacity: 0;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
   
   
   
