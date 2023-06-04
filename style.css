@@ -4,6 +4,12 @@
 }
 
 
+#jumbot {
+ background-image: url("./images/banner.png");
+ background-size: cover; 
+  
+}
+
 #formf {
     border: 2px solid black;
 }
