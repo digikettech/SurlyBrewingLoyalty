@@ -23,9 +23,97 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 30px green solid;
+    
+    /*border: 30px green solid;*/
 
   }
+
+
+.row {
+    height: 100%;  /* This makes sure the row takes the full height of .fullpage */
+}
+
+
+/*Button Main Page*/
+ 
+ 
+
+/* CSS for larger screens */
+/* For small devices (phones, 600px and below) */
+@media (max-width: 576px) {
+  .btn.btn-danger {
+    position: absolute;
+    top: 70%;
+    left: 42%;
+    transform: translate(-50%, -50%); /* centers the button */
+
+    width: 50%;
+
+  }
+}
+
+/* For medium devices (tablets, 600px and up) */
+@media (min-width: 576px) {
+  .btn.btn-danger {
+    position: absolute;
+    top: 73%;
+    left: 85%;
+    transform: translate(-50%, -50%); /* centers the button */
+
+    width: 50%;
+  }
+}
+
+/* For large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  .btn.btn-danger {
+    position: absolute;
+    top: 75%;
+    left: 90%;
+    transform: translate(-50%, -50%); /* centers the button */
+
+    width: 50%;
+  }
+}
+
+/* For extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .btn.btn-danger {
+    position: absolute;
+    top: 78%;
+    left: 85%;
+    transform: translate(-50%, -50%); /* centers the button */
+
+    width: 50%;
+  }
+}
+
+/* For extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1668px) {
+  .btn.btn-danger {
+    position: absolute;
+    top: 83%;
+    left: 90%;
+    transform: translate(-50%, -50%); /* centers the button */
+
+    width: 50%;
+  }
+}
+
+/* For extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 2096) {
+  .btn.btn-danger {
+    position: absolute;
+    top: 110%;
+    left: 90%;
+    transform: translate(-50%, -50%); /* centers the button */
+
+    width: 50%;
+
+  }
+}
+
+
   
 /*Carousel*/
 .col-sm-6.carousel  {  
@@ -36,7 +124,7 @@ body, html {
 .col-sm-6.fullp {
     color: red;
     font-size: 3em;
-    border: 3px rgb(8, 0, 246) solid;
+    /*border: 3px rgb(8, 0, 246) solid;*/
   
 }
 
@@ -66,73 +154,7 @@ body, html {
 }
 
   
-  
-  
-  
-  
-  
-  
-   /* #jumbot {
-   background-image: url("./images/banner.png");
-   background-size: cover; 
-   background-image: url("./images/banner.png");
-  
-   
-   height: 100%;
-  }  
-  
-  #formf {
-      border: 2px solid black;
-  }
-  
-  .listPoints
-  {
-      font-size: 30px;
-      color: darkgoldenrod;
-      text-align: center;
-  }
-  
-  #animals
-  {
-      text-align: right;
-  }
-  
-  button
-  {
-      color: darkgoldenrod;
-      margin: 20px;
-  }
+ 
   
   
    
-  
-  table {
-      text-align: left;
-      position: relative;
-      border-collapse: collapse; 
-      background-color: #f6f6f6;
-   
-    td, th {
-      border: 1px solid #999;
-      padding: 20px;
-    }
-    th {
-      background: brown;
-      color: white;
-      border-radius: 0;
-      position: sticky;
-      top: 0;
-      padding: 10px;
-    }
-    .primary{
-      background-color: #000000
-    }
-    
-    tfoot > tr  {
-      background: black;
-      color: white;
-    }
-    tbody > tr:hover {
-      background-color: #ffc107;
-    }
-    */
