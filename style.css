@@ -5,6 +5,7 @@ body, html {
     margin: 0%;
     background-image: url("./images/blackbg.png");
     background-size: cover; 
+    
   
   }
     .background {
@@ -23,20 +24,30 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
-    /*border: 30px green solid;*/
-
   }
-
 
 .row {
     height: 100%;  /* This makes sure the row takes the full height of .fullpage */
 }
 
 
-/*Button Main Page*/
- 
- 
+.typing-button {
+  font-size: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
+  }
+}
+
+
 
 /* CSS for larger screens */
 /* For small devices (phones, 600px and below) */
@@ -46,7 +57,7 @@ body, html {
     top: 70%;
     left: 42%;
     transform: translate(-50%, -50%); /* centers the button */
-
+    font-size: 20px;
     width: 50%;
 
   }
@@ -59,7 +70,7 @@ body, html {
     top: 73%;
     left: 85%;
     transform: translate(-50%, -50%); /* centers the button */
-
+    font-size: 20px;
     width: 50%;
   }
 }
@@ -71,7 +82,7 @@ body, html {
     top: 75%;
     left: 90%;
     transform: translate(-50%, -50%); /* centers the button */
-
+    font-size: 20px;
     width: 50%;
   }
 }
@@ -83,7 +94,7 @@ body, html {
     top: 78%;
     left: 85%;
     transform: translate(-50%, -50%); /* centers the button */
-
+    font-size: 20px;
     width: 50%;
   }
 }
@@ -95,7 +106,7 @@ body, html {
     top: 83%;
     left: 90%;
     transform: translate(-50%, -50%); /* centers the button */
-
+    font-size: 20px;
     width: 50%;
   }
 }
@@ -107,14 +118,43 @@ body, html {
     top: 110%;
     left: 90%;
     transform: translate(-50%, -50%); /* centers the button */
-
+    font-size: 20px;
     width: 50%;
 
   }
 }
 
+/*Parallax*/
+.parallax-section {
+  border-top: 1px red solid;
+  border-bottom: 1px red solid;
 
+  /* The image used */
+  background-image: url("./images/banner.png");
+
+  /* Set a specific height */
+  min-height: 40vh; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
   
+/*Tiers*/
+
+.full-screen-section {
+  height: 100vh; /* Set height to 100% of viewport height */
+}
+
+
+.container.formsbottom {
+  height: 100vh; /* Set height to 100% of viewport height */
+}
+
+
+
 /*Carousel*/
 .col-sm-6.carousel  {  
     border: 3px red solid;
@@ -128,33 +168,77 @@ body, html {
   
 }
 
-
-  /* Slide in text */
-  .slide-in-text {
-    color: blue;
-    font-size: 3em;
-    animation: slide-in 2s forwards;
-    opacity: 0;
-}
-
-.slide-in-image {
-    animation: slide-in 2s forwards;
-    opacity: 0;
-}
-
-@keyframes slide-in {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-  
  
-  
-  
-   
+.slide-in-text {
+  transition: transform 2.0s ease-in;
+  transform: translateX(-55%);
+}
+
+.slide-in-text.slide-in {
+  transform: translateX(0);
+}
+
+
+.chart {
+margin-top: 1000px;
+margin-right: 20px;
+width: 700px;
+height:700px;
+
+}
+
+.sign {
+  color: red;
+  font-size:60px;
+  text-shadow: 2px 2px 2px black;
+
+}
+.form-group {
+  color: red;
+  font-size:30px;
+  text-shadow: 2px 2px 2px black;
+
+}
+
+.surlylogobottom {
+
+  width: 200px;
+  height:200px;
+}
+
+
+
+footer {
+  border-top: 9px solid black;
+  border-bottom: 9px solid black;
+  background-color: #e10404;
+  padding: 20px 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-links li {
+  margin-left: 20px;
+}
+
+.footer-links li:first-child {
+  margin-left: 0;
+}
+
+#map{
+  border: 3px solid black;
+ 
+}
+
+.pp {
+  font-size: 14px;
+  margin-top: 40px;
+  color:black;
+  font-weight: bold;
+}
